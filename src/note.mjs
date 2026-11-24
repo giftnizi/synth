@@ -44,8 +44,8 @@ export function noteToFreq(name){
 	//calculating each semitone relative to octave 0 or from C0
 	const absoluteSemitones = semitoneOffset + (12*octave);
 
-	//calculating semitone distance from middle C or C4 (47 semitones above C0)
-	const n = absoluteSemitones - 47;
+	//calculating semitone distance from A4 (57 semitones above C0)
+	const n = absoluteSemitones - 57;
 
 	//finding the frequency in hertz using the 12 tone tempermant found on a piano
 	const frequency = 440 * Math.pow(2, n / 12);
