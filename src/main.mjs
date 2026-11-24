@@ -1,2 +1,30 @@
+
+//importing the freq converter from the local ES module with synth/src
 import {noteToFreq} from './note.mjs';
-console.log(noteToFreq('C4'));
+
+//testing to see if the note.mjs throws an error and its expected output
+console.log('C4:', noteToFreq('C4')); //Expected ~261.6hz
+console.log('A4:', noteToFreq('A4')); //Expected 440hz
+console.log('Bb4:', noteToFreq('Bb4'));
+
+//verifying that an invlid input throws an error
+try {
+	noteToFreq('Z4');
+} catch (err) {
+	//error message being logged (invalid note)
+	console.error('Caught expected error:', err.message);
+};
+
+try {
+	noteToFreq('E#5');
+} catch (err) {
+	//error message being logged (invalid note)
+	console.error('Caught expected error:', err.message);
+};
+
+try {
+	noteToFreq('F13');
+} catch (err) {
+	//error message being logged (invalid octave)
+	console.error('Caught expected error:', err.message);
+};
