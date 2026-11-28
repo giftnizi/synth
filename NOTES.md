@@ -1,6 +1,4 @@
-DAY1 - Thursday, October 22, 2026 - starting my web synth journey
-setup git repo, git, github ssh auth via gh. NExtt: noteToFreq, then first 440hz tone
-Learned gh auth login handles ssh key upload, and that passphrase only gates push not commits
+28 Nov reviewing work, checking improvements and understanding the files we have
 
 
 - 2026-11-27 (713d84a): 27-NOV-2026 ---we have an audio output, the server plays on 8000 using python3 in terminal
